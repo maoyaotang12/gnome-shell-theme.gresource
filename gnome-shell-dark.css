@@ -283,31 +283,39 @@ StEntry {
 .message .message-header .message-close-button {
   font-weight: bold;
   padding: 6px 12px;
-  border-radius: 8px;
+  border-radius: 12px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15); }
+  .notification-button, .message .message-header:ltr, .message-expand-button:ltr,
+  .message .message-header:ltr, .message-close-button:ltr {
+	  margin: 0 5px 5px 5px; }
+  .notification-button, .message .message-header:rtl, .message-expand-button:rtl,
+  .message .message-header:rtl, .message-close-button:rtl {
+	  margin: 0 5px 5px 5px; }  
   .notification-button:focus, .message .message-header .message-expand-button:focus,
   .message .message-header .message-close-button:focus {
-    color: #ffffff;
-    box-shadow: inset 0 0 0 2px st-transparentize(-st-accent-color, 0.5) !important;
-    background-color: st-mix(-st-accent-color, rgba(255, 255, 255, 0.15), 5%); }
+    color: whitesmoke;
+    background-color: -st-accent-color; }
     .notification-button:focus:hover, .message .message-header .message-expand-button:focus:hover,
     .message .message-header .message-close-button:focus:hover {
-      background-color: st-mix(-st-accent-color, rgba(255, 255, 255, 0.3), 5%); }
+      color: whitesmoke;
+	  background-color: st-darken(-st-accent-color, 15%); }
   .notification-button:hover, .message .message-header .message-expand-button:hover,
   .message .message-header .message-close-button:hover {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.3); }
+      color: whitesmoke;
+	  background-color: st-darken(-st-accent-color, 18%); }
   .notification-button:active, .message .message-header .message-expand-button:active,
   .message .message-header .message-close-button:active {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2); }
+    color: whitesmoke;
+    background-color: -st-accent-color; }
     .notification-button:active:hover, .message .message-header .message-expand-button:active:hover,
     .message .message-header .message-close-button:active:hover {
-      background-color: rgba(255, 255, 255, 0.2); }
+      color: whitesmoke;
+	  background-color: st-darken(-st-accent-color, 15%); }
     .notification-button:active:focus, .message .message-header .message-expand-button:active:focus,
     .message .message-header .message-close-button:active:focus {
-      background-color: st-mix(-st-accent-color, rgba(255, 255, 255, 0.2), 5%); }
+      color: whitesmoke;
+	  background-color: st-darken(-st-accent-color, 18%); }
   .notification-button:checked, .message .message-header .message-expand-button:checked,
   .message .message-header .message-close-button:checked {
     color: #ffffff;
@@ -325,14 +333,15 @@ StEntry {
 
 .modal-dialog .modal-dialog-button-box .modal-dialog-button {
   font-weight: bold;
+  font-size: 1.1em;
   padding: 12px;
   border-radius: 12px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1); }
   .modal-dialog .modal-dialog-button-box:ltr, .modal-dialog-button:ltr {
-	  margin: 0 10px 10px 10px; }
+	  margin: 0 5px 5px 5px; }
   .modal-dialog .modal-dialog-button-box:rtl, .modal-dialog-button:rtl {
-	  margin: 0 10px 10px 10px; }
+	  margin: 0 5px 5px 5px; }
   .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus {
     color: whitesmoke;
     background-color: -st-accent-color; }
