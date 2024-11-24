@@ -2175,7 +2175,7 @@ StScrollBar {
 	spacing: 10px; }
 
 #overviewGroup {
-   background-image: url("8.jpg");
+   background-image: url("adwaita-d.jxl");
    background-size: cover;
    background-position: center;	}
 
@@ -3170,7 +3170,7 @@ StScrollBar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
 
 #lockDialogGroup {
- background: url("8.jpg");
+ background: url("adwaita-d.jxl");
  background-size: cover;
  background-position: center;	}	
 
